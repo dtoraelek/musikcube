@@ -8,15 +8,7 @@ check out the [installation guide](https://github.com/clangen/musikcube/wiki/ins
 
 be sure to also read through a [the user guide](https://github.com/clangen/musikcube/wiki/user-guide), which describes app's navigation paradigm and lists all the default keyboard shortcuts.
 
-Building from source on Linux is a breeze! Just run this snippet of code, or use the install-linux.sh script included. Just don't foget to chmod +x the file as root!
-
-
-    cd musikcube
-    git submodule init; git submodule update #fixes asio bug from user clangen
-    cmake -G "Unix Makefiles" .
-    make
-    sudo make install
-    musikcube
+Building from source on Linux is a breeze! Just use the install-linux.sh script included. Just don't foget to chmod +x the file as root!
 
 
 # screenshots
@@ -69,7 +61,13 @@ musikcube runs well on a raspberry pi, connected to your home stereo. [see here 
 
 # compiling
 
-if you'd like to compile the project yourself, you can check out the [build instructions](https://github.com/clangen/musikcube/wiki/building).
+Visit https://github.com/clangen/musikcube and navigate to the wiki if you need options other than Linux for compiling. Otherwise, this is the printed version of the install-linux.sh script. First time builders are reminded to cd into the folder first to start the build process and/or run my handy script.
+
+    git submodule init; git submodule update #fixes asio bug from user clangen
+    cmake -G "Unix Makefiles" .
+    make
+    sudo make install #or doas if applicable
+    musikcube
 
 # keyboard shortcuts
 
