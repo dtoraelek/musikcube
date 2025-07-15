@@ -8,7 +8,16 @@ check out the [installation guide](https://github.com/clangen/musikcube/wiki/ins
 
 be sure to also read through a [the user guide](https://github.com/clangen/musikcube/wiki/user-guide), which describes app's navigation paradigm and lists all the default keyboard shortcuts.
 
-if you want to build it from source, [the instructions are here](https://github.com/clangen/musikcube/wiki/building).
+Building from source on Linux is a breeze! Just run this snippet of code, or use the install-linux.sh script included.
+
+
+    cd musikcube
+    git submodule init; git submodule update #fixes asio bug from user clangen
+    cmake -G "Unix Makefiles" .
+    make
+    sudo make install
+    musikcube
+
 
 # screenshots
 
