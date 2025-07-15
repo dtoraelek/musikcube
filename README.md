@@ -8,7 +8,7 @@ check out the [installation guide](https://github.com/clangen/musikcube/wiki/ins
 
 be sure to also read through a [the user guide](https://github.com/clangen/musikcube/wiki/user-guide), which describes app's navigation paradigm and lists all the default keyboard shortcuts.
 
-Building from source on Linux is a breeze! Just run this snippet of code, or use the install-linux.sh script included.
+Building from source on Linux is a breeze! Just run this snippet of code, or use the install-linux.sh script included. Just don't foget to chmod +x the file as root!
 
 
     cd musikcube
