@@ -55,22 +55,25 @@ const validLibraries = mac
   ])
   : new Set([
     '/lib/ld-linux-armhf.so.3',
+    '/lib/ld-linux.so.2',
     '/lib64/ld-linux-x86-64.so.2',
-    '/usr/lib/arm-linux-gnueabihf/libarmmem-${PLATFORM}.so',
     '/usr/lib/arm-linux-gnueabi/libarmmem-${PLATFORM}.so',
+    '/usr/lib/arm-linux-gnueabihf/libarmmem-${PLATFORM}.so',
+    'libasound.so.2',
+    'libatomic.so.1',
     'libc.so.6',
+    'libdb-5.3.so',
     'libdl.so.2',
     'libgcc_s.so.1',
+    'libjack.so.0',
     'libm.so.6',
+    'libportaudio.so.2',
     'libpthread.so.0',
     'librt.so.1',
     'libstdc++.so.6',
     'libz.so.1',
+    'linux-gate.so.1',
     'linux-vdso.so.1',
-    'libportaudio.so.2',
-    'libasound.so.2',
-    'libjack.so.0',
-    'libdb-5.3.so',
   ]);
 
 let errors = 0;

@@ -25,15 +25,15 @@
 - `Command: n`   [add new partition]
 - `Command: p`   [primary partition]
 - `Command: 2`   [partition number]
-- `Command:    ` [enter start value from first step]
-- `Command:    ` [press enter to accept default value]
+- `Command:  `   [enter start value from first step]
+- `Command:  `   [press enter to accept default value]
 - `Command: N`   [to *NOT* remove the ext4 signature]
 - `Command: w`   [write table to file]
 
 # Create a mount point
 - `mkdir os-mount`
 
-# Mount both disk imagen partitions via loopback
+# Mount both disk image partitions via loopback
 - `sudo kpartx -a -v 2023-05-03-raspios-buster-armhf-lite.img`
 
 output, note device names:
@@ -61,7 +61,8 @@ add map loop4p2 (253:1): 0 33021952 linear 7:4 532480  <== THIS IS OUR ACTUAL OS
 - `exit`
 
 # Enter the chroot
-- `sudo chroot ./os-mount`
+- `sudo chroot ./os-mount /usr/bin/qemu-arm-static /usr/bin/bash`
+> If you get an error about /usr/bin/bash not found, try /bin/bash instead
 
 # Shutdown
 - `sudo umount ./os-mount/dev`
